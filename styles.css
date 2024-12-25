@@ -1,0 +1,590 @@
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #000000;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  color: bisque;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.head_img {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.head_img img {
+  margin: auto;
+  padding: 0px 23px;
+  max-width: 100px;
+  height: auto;
+}
+
+.header {
+  background-color: #000000;
+  padding: 15px 0;
+  color: bisque;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 10px;
+  color: #fbfbfc;
+  font-family: "Doto", sans-serif;
+}
+
+.header h1 {
+  font-size: 45px;
+  color: #ffffff;
+  font-family: "RampartOne", sans-serif;
+}
+
+.header h2 {
+  font-size: 25px;
+  color: #f3f3f3;
+  font-family: "RampartOne", sans-serif;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #d0b1f9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu li {
+  margin-left: 20px;
+  color: #d0b1f9;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f4f0fa;
+  font-weight: bold;
+  font-family: "RampartOne", sans-serif;
+}
+
+#background-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.content-overlay h1 {
+  font-size: 56px;
+  font-weight: 1000;
+  font-family: "Doto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.content-overlay p {
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Doto", sans-serif;
+}
+
+#background-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero {
+  text-align: center;
+  background-color: #000707;
+}
+
+.hero h1 {
+  font-size: 56px;
+  background-color: #000000;
+  color: #f6f5f9;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  margin: 0%;
+}
+
+.hero h2 {
+  font-size: 20px;
+  background-color: #000000;
+  color: blanchedalmond;
+  font-family: "Doto", sans-serif;
+  margin: 0%;
+}
+
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #fefafa;
+  font-family: "Doto", sans-serif;
+}
+
+.time-box {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  font-weight: 1000;
+}
+
+.time-box span {
+  display: block;
+  font-size: 4rem;
+  color: #07fe07;
+}
+
+.time-label {
+  font-size: 1rem;
+  color: yellow;
+}
+
+.prizepool {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  font-family: "Doto", sans-serif;
+}
+
+.prize-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+  border-radius: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.prize-pool h1 {
+  text-align: center;
+  font-family: "Doto", sans-serif;
+  color: #ff0000;
+  font-weight: 1000;
+  font-size: 1.rem;
+}
+
+.prize-pool h2 {
+  text-align: center;
+  font-family: "Doto", sans-serif;
+  color: #000000;
+  font-weight: 1000;
+  font-size: 1.rem;
+}
+
+.prize-card:hover {
+  transform: translateY(-5px);
+  color: rgb(65, 0, 242);
+  background-color: #efedb4;
+  font-weight: 1000;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.event-details {
+  background-color: #000000;
+  padding: 30px 15px;
+  text-align: center;
+  color: #f9e802;
+  font-family: "Doto", sans-serif;
+}
+
+.event-details h2 {
+  font-size: 2rem;
+  color: rgb(62, 209, 140);
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.event-details h3 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: "Doto", sans-serif;
+}
+
+@keyframes binaryFlow {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Doto", sans-serif;
+  
+  
+}
+
+.event-info {
+  max-width: 400px;
+  color: #09ff00;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, rgba(253, 253, 6, 0), rgba(0, 0, 0, 0.594)), 
+                    repeating-linear-gradient(-45deg, 
+                      rgb(1, 251, 1) 0, 
+                      rgb(0, 255, 0) 1px, 
+                      transparent 1px, 
+                      transparent 20px),
+                    repeating-linear-gradient(-45deg, 
+                      rgb(0, 189, 252) 0, 
+                      rgb(0, 170, 255) 1px, 
+                      rgb(0, 166, 255) 20px, 
+                      rgb(251, 8, 247) 40px);
+  background-size: 200% 100%, 10px 10px, 50px 50px;
+  animation: binaryFlow 6s linear infinite;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 1000;
+  font-family: "Doto", sans-serif;
+}
+.event-info h3 {
+  max-width: 400px;
+  color: #f3fb01;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.locate-btn {
+  background-color: #ffff00;
+  color: rgb(8, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+
+.locate-btn:hover {
+  background-color: #01ff01;
+  font-family: "Doto", sans-serif;
+}
+
+.domains {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: "Doto", sans-serif;
+}
+
+#domains h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(62, 209, 140);
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  font-family: "Doto", sans-serif;
+}
+
+.domain-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  animation: hop 3s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.domain-grid .domain-card:nth-child(1) {
+  animation-delay: 0s;
+}
+.domain-grid .domain-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.domain-grid .domain-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.domain-grid .domain-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.domain-grid .domain-card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.domain-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: #efedb4;
+}
+
+.domain-card h3 {
+  font-size: 1.5rem;
+  color: #0099ff;
+  margin-bottom: 10px;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.domain-card p {
+  font-size: 1rem;
+  color: #ff0000;
+  font-family: "Doto", sans-serif;
+}
+
+.domain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: #efedb4;
+}
+
+.rules h2 {
+  text-align: center;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  font-size: 2rem;
+  color: #ff0000;
+  position: relative; 
+  z-index: 2;
+}
+
+.rules {
+  text-align: left;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  background-color: #000000;
+  color: #fb0606;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.rules .sparkles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0; 
+}
+
+
+.rules .sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ffffff 0%, #00d0ff 70%, transparent 100%);
+  border-radius: 50%;
+  animation: sparkle-animation 3s infinite ease-in-out;
+  opacity: 0;
+  z-index: 0; 
+}
+
+
+@keyframes sparkle-animation {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+.services {
+  padding: 30px 15px;
+  color: antiquewhite;
+  font-family: "Audiowide", sans-serif;
+}
+
+.services h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: blanchedalmond;
+  font-family: "Doto", sans-serif;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.service-card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  background: rgb(255, 255, 255);
+  border: 1px solid #d0b1f9;
+  text-align: center;
+  color: rgb(4, 13, 0);
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  color: rgb(255, 0, 0);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.register-btn2 {
+  background-color: #ffffff;
+  color: rgb(8, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.register-btn2:hover {
+  background-color: #07fe07;
+  font-family: "Doto", sans-serif;
+}
+
+.click-btn {
+  background-color: #ffffff;
+  color: rgb(8, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+}
+
+.click-btn:hover {
+  background-color: #07fe07;
+  font-family: "Doto", sans-serif;
+}
+
+.clients {
+  background-color: #000000;
+  padding: 30px 15px;
+  text-align: center;
+  color: rgb(171, 255, 208);
+  font-family: "Doto", sans-serif;
+  font-weight: 1000;
+  font-size: 30;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.client-logos img {
+  margin: 15px;
+  max-width: 150px;
+  height: auto;
+}
+
+footer {
+  background-color: #dffb68;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-family: "Doto", sans-serif;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .header h2 {
+      font-size: 1.2rem;
+  }
+
+  .content-overlay h1 {
+      font-size: 1.8rem;
+  }
+
+  .content-overlay p {
+      font-size: 0.9rem;
+  }
+
+  .time-box span {
+      font-size: 2rem;
+  }
+
+  .client-logos img {
+      max-width: 80px;
+  }
+}
